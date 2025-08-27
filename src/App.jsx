@@ -9,7 +9,7 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
    useEffect(() => {
-    window.scrollTo(0, 0); // ✅ ensures top on reload
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="App">
