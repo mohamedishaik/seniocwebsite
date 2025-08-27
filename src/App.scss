@@ -1,0 +1,20 @@
+// src/App.scss
+@import "./styles/colors";
+@import "./styles/global";
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+html {
+  scroll-behavior: smooth; // smooth scroll
+  scroll-padding-top: 80px; // 👈 height of your header
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+

@@ -1,0 +1,75 @@
+@import "../../styles/colors";
+
+.about {
+  background: $background-alt;
+  text-align: center;
+  padding: 4rem 2rem;
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+
+  .about-intro {
+  max-width: 1000px; // make it wider, nearly end-to-end
+  margin: 0 auto 3rem;
+  text-align: left; // paragraphs left aligned for readability
+  color: $secondary-color;
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  .about-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+    color: $primary-color;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-card {
+    background: linear-gradient(135deg, lighten($color-grey, 15%), lighten($color-light-grey, 8%));
+    border: none;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: $secondary-color;
+      line-height: 1.5;
+    }
+  }
+}

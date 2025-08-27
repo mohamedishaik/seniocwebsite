@@ -1,0 +1,64 @@
+@import "../../styles/colors";
+
+.contact {
+  background: $background-color;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact-card {
+    max-width: 600px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 15px;
+    background: linear-gradient(135deg, lighten($background-alt, 8%), darken($background-alt, 8%));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: $primary-color;
+  }
+
+  .contact-desc {
+    font-size: 1rem;
+    color: darken($text-color, 10%);
+    margin-bottom: 2rem;
+  }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center; // 👈 ensures left alignment
+  width: 100%;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; // 👈 very small spacing
+  font-size: 1.1rem;
+  color: $text-color;
+  font-weight: 500;
+
+  .contact-icon {
+    flex-shrink: 0;
+    font-size: 1.1rem; // 👈 same as text
+    color: $primary-color;
+    margin-top: 3px;
+  }
+
+  span,
+  .contact-address {
+    line-height: 1.5;
+    word-break: break-word;
+  }
+}
+
+.infoSenioc {
+  font-size: 1.5rem !important; 
+}
+
+}
